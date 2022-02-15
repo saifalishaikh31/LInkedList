@@ -76,10 +76,12 @@ namespace LinkedListProgram
         {
             if (this.head == null)
             {
-                return null;
+                Console.WriteLine("Linked List is Empty");
+                return head;
             }
             this.head = this.head.next;
             return this.head;
         }
+        
     }
 }
