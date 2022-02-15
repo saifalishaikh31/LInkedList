@@ -72,5 +72,14 @@ namespace LinkedListProgram
             Console.WriteLine("Inserted value is : " +  data);
             return head;
         }
+        internal Node PopFirstNode()
+        {
+            if (this.head == null)
+            {
+                return null;
+            }
+            this.head = this.head.next;
+            return this.head;
+        }
     }
 }
