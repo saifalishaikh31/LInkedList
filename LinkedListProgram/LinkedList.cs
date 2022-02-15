@@ -27,6 +27,7 @@ namespace LinkedListProgram
             }
             Console.WriteLine("{0} is inserted into Linked list", node.data);
         }
+
         internal void Display()
         {
             Node temp = this.head;
