@@ -82,6 +82,29 @@ namespace LinkedListProgram
             this.head = this.head.next;
             return this.head;
         }
-        
+        internal Node PopLastNode()
+        {
+            if(head == null)
+            {
+                Console.WriteLine("Linked List is Empty!");
+                return head;
+            }
+            if (head.next == null)
+            {
+                head = null;
+                return head;
+            }
+            else
+            {
+                Node temp = head;
+                while(temp.next.next != null)
+                {
+                    temp = temp.next;
+                    temp.next = null;
+                    return head;
+                }
+            }
+            return head;
+        }
     }
 }
